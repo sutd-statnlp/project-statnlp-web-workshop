@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>StatNLP Workshop</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- logo -->
+                <div class="site-branding">
+                    <a class="logo" href="/">
+
+                        <!-- logo image  -->
+                        <img src="assets/images/logo.png" alt="Logo">
+
+                        <strong>StatNLP Workshop 2018</strong>
+                    </a>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active">
+                        <a data-scroll href="#about">
+                            <strong>About</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#registration">
+                            <strong>Registration</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#sponsors">
+                            <strong>Sponsors</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#location">
+                            <strong>Location</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+
+            <h2>26 July, 2018 / Singapore University of Technology and Design</h2>
+
+            <h1 id="m-title">StatNLP Workshop 2018</h1>
+
+            <p>First &amp; Largest StatNLP Workshop</p>
+
+            <a class="btn btn-white m-btn-register" data-scroll href="#registration">Register Now</a>
+
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About StatNLP</h3>
+
+                    <p>The StatNLP was created in 2014. Currently, it is led by Prof Lu Wei , consisting of several graduate
+                        students and researchers. The group subscribes to the design spirit of SUTD. The group has built
+                        a successful track record of publishing in the top ranked conferences. Members of StatNLP also collaborate
+                        with external organizations such as DSO National Laboratory.</p>
+
+                    <figure>
+                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
+                    </figure>
+
+                </div>
+                <!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
+
+                    <p>StatNLP focuses on the development of novel and efficient algorithms for solving text and language processing
+                        problems in machine learning. It is A Unified Framework for Structured Prediction designed for the
+                        purpose of fast prototyping of different machine learning and structured prediction algorithms</p>
+
+                    <ul class="list-arrow-right">
+
+                        <li>For structured prediction from theory to practice</li>
+                        <li>For machine learning from big data to insight</li>
+                        <li>Fast prototyping</li>
+                        <li>Various structured prediction models</li>
+                        <li>Capable of modeling structures</li>
+                    </ul>
+
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2018
+                        <br>July 26</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>SUTD
+                        <br>Singapore</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>Free
+                        <br>Tickets</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-speakerphone"></i>
+                    <h3>SUTD
+                        <br>Speakers</h3>
+
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+    <section id="registration" class="section registration">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Registration</h3>
+                </div>
+            </div>
+
+            <form action="#" id="registration-form">
+                <div class="row">
+                    <div class="col-md-12" id="registration-msg">
+                        <div id="form-success" class="alert alert-success" role="alert" style="display:none;"></div>
+                        <div id="form-error" class="alert alert-error" role="alert" style="display:none;"></div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="role" id="role" required>
+                                <option>Attendee</option>
+                                <option>Sponsor</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt20">
+                    <button type="submit" class="btn btn-primary" id="registration-submit-btn">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="sponsors" class="section partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Workshop Sponsors</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="https://www.dso.org.sg/" class="partner-box partner-box-1"></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="http://www.moe.gov.sg/" class="partner-box partner-box-2"></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://www.mindef.gov.sg/" class="partner-box partner-box-3"></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://www.nrf.gov.sg/" class="partner-box partner-box-4"></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="http://www.nsfc.gov.cn/" class="partner-box partner-box-5"></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://sutd.edu.sg/" class="partner-box partner-box-6"></a>
+                </div>
+            </div>
+    </section>
+
+    <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Location</h3>
+                    <address>
+                        <p>Think Tank 23
+                            <br> The SUTD
+                            <br> 8 Somapah Rd, Singapore 487372
+                            <br> Email: statnlp@gmail.com</p>
+                    </address>
+                </div>
+                <div class="col-sm-9">
+                    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQBvZnbU-SJqBtYxawwh4hkEGhl8UML-I
+                          &q=SUTD Singapore" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="site-info">© Copyright 2018 StatNLP | All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="assets/js/workshop.js"></script>
+
+</body>
+
+</html>

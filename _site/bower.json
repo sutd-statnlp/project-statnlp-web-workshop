@@ -1,0 +1,22 @@
+{
+  "name": "statnlp-event",
+  "version": "1.0.0",
+  "main": "index.html",
+  "keywords": [
+    "statnlp-event"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "ionicons": "~2.0.1",
+    "isotope": "~2.2.1",
+    "smooth-scroll": "~7.0.0"
+  }
+}
