@@ -27,7 +27,7 @@
                         <!-- logo image  -->
                         <img src="assets/images/logo.png" alt="Logo">
 
-                        <strong>StatNLP Workshop 2018</strong>
+                        <strong class="m-logo-title">StatNLP Workshop</strong>
                     </a>
                 </div>
 
@@ -74,11 +74,11 @@
     <header id="site-header" class="site-header valign-center">
         <div class="intro">
 
-            <h2>26 July, 2018 / Singapore University of Technology and Design</h2>
+            <h2>Singapore University of Technology and Design</h2>
 
-            <h1 id="m-title">StatNLP Workshop 2018</h1>
+            <h1 id="m-title">Natural language processing / AI Workshop</h1>
 
-            <p>First &amp; Largest StatNLP Workshop</p>
+            <p>July 2018</p>
 
             <a class="btn btn-white m-btn-register" data-scroll href="#registration">Register Now</a>
 
@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-sm-6">
 
-                    <h3 class="section-title">About StatNLP</h3>
+                    <h3 class="section-title">About Workshop</h3>
 
                     <p>The StatNLP was created in 2014. Currently, it is led by Prof Lu Wei , consisting of several graduate
                         students and researchers. The group subscribes to the design spirit of SUTD. The group has built
@@ -136,7 +136,7 @@
 
                     <i class="ion-ios-calendar"></i>
                     <h3>2018
-                        <br>July 26</h3>
+                        <br>On July</h3>
 
                 </div>
                 <div class="col-sm-3">
@@ -150,7 +150,7 @@
 
                     <i class="ion-pricetags"></i>
                     <h3>Free
-                        <br>Tickets</h3>
+                        <br>Registration</h3>
 
                 </div>
                 <div class="col-sm-3">
@@ -197,9 +197,17 @@
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="role" id="role" required>
-                                <option>Attendee</option>
-                                <option>Sponsor</option>
+                                <option>Faculty</option>
+                                <option>Researcher</option>
+                                <option>Industry</option>
+                                <option>Government</option>
+                                <option>UG Student</option>
+                                <option>PG Student</option>
+                                <option value="other">Others</option>
                             </select>
+                        </div>
+                        <div class="form-group" id="formCustomRole" hidden>
+                            <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole">
                         </div>
                     </div>
                 </div>
@@ -218,24 +226,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-2">
-                    <a href="https://www.dso.org.sg/" class="partner-box partner-box-1"></a>
+                <div class="col-sm-6">
+                    <a href="https://www.alibaba.com/" target="_blank" class="partner-box partner-box-1"></a>
                 </div>
-                <div class="col-sm-2">
-                    <a href="http://www.moe.gov.sg/" class="partner-box partner-box-2"></a>
+                <div class="col-sm-6">
+                    <a href="https://www.sginnovate.com/" target="_blank" class="partner-box partner-box-2"></a>
                 </div>
-                <div class="col-sm-2">
-                    <a href="https://www.mindef.gov.sg/" class="partner-box partner-box-3"></a>
-                </div>
-                <div class="col-sm-2">
-                    <a href="https://www.nrf.gov.sg/" class="partner-box partner-box-4"></a>
-                </div>
-                <div class="col-sm-2">
-                    <a href="http://www.nsfc.gov.cn/" class="partner-box partner-box-5"></a>
-                </div>
-                <div class="col-sm-2">
-                    <a href="https://sutd.edu.sg/" class="partner-box partner-box-6"></a>
-                </div>
+               
             </div>
     </section>
 
@@ -245,10 +242,9 @@
                 <div class="col-sm-3">
                     <h3 class="section-title">Location</h3>
                     <address>
-                        <p>Think Tank 23
-                            <br> The SUTD
+                        <p>Singapore University of Technology and Design (SUTD)
                             <br> 8 Somapah Rd, Singapore 487372
-                            <br> Email: statnlp@gmail.com</p>
+                        </p>
                     </address>
                 </div>
                 <div class="col-sm-9">
@@ -277,7 +273,7 @@
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="assets/js/workshop.js"></script>
-
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
