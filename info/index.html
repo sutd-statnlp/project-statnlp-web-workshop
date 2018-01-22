@@ -15,17 +15,17 @@
 <body>
     <div class="row justify-content-center">
         <button id="m-btn-signin" type="button" onclick="signIn()" class="btn btn-primary">Sign In With Google </button>
-        <button id="m-btn-signout" type="button" onclick="signOut()" class="btn btn-primary">Sign Out</button>
+        <button id="m-btn-signout" type="button" onclick="signOut()" class="btn btn-primary hidden">Sign Out</button>
     </div>
 
-    <section id="m-sec-info" class="p-2">
+    <section id="m-sec-info" class="p-2" >
 
         <div class="card p-4 text-center">
             <h5>After sign in, if you cannot view the registration information</h5>
             <h5>Please send the permission request to <a href="mailto:ainguyenkaka@gmail.com">ainguyenkaka@gmail.com</a> !</h5>
         </div>
     </section>
-    <section id="m-sec-table" class="p-2">
+    <section id="m-sec-table" class="p-2 hidden">
 
         <div class="card p-2">
             <table id="table" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -59,7 +59,6 @@
 
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="main.min.js"></script>
-
 
 </body>
 
