@@ -22,13 +22,10 @@
 
                 <!-- logo -->
                 <div class="site-branding">
-                    <a class="logo" href="/">
-
-                        <!-- logo image  -->
+                    <!-- <a class="logo" href="/">
                         <img class="m-logo" src="assets/images/logo.png" alt="Logo">
-
                         <strong class="m-logo-title">StatNLP Workshop</strong>
-                    </a>
+                    </a> -->
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
@@ -45,19 +42,19 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!-- navigation menu -->
-                    <li class="active">
-                        <a data-scroll href="#about">
-                            <strong>About</strong>
-                        </a>
-                    </li>
                     <li>
                         <a data-scroll href="#registration">
                             <strong>Registration</strong>
                         </a>
                     </li>
                     <li>
+                        <a data-scroll href="#facts">
+                            <strong>Overview</strong>
+                        </a>
+                    </li>
+                    <li>
                         <a data-scroll href="#sponsors">
-                            <strong>Sponsors</strong>
+                            <strong>Partners</strong>
                         </a>
                     </li>
                     <li>
@@ -74,98 +71,18 @@
     <header id="site-header" class="site-header valign-center">
         <div class="intro">
 
-            <h2>Singapore University of Technology and Design</h2>
-
             <h1 id="m-title">Natural language processing / AI Workshop</h1>
 
-            <p>July 2018</p>
+            <p>
+                <strong>
+                    30 July 2018
+                </strong>
+            </p>
 
-            <a class="btn btn-white m-btn-register" data-scroll href="#registration">Register Now</a>
+            <a class="btn btn-info m-btn-register" data-scroll href="#registration">Register Now</a>
 
         </div>
     </header>
-
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-
-                    <h3 class="section-title">About Workshop</h3>
-
-                    <p>The StatNLP was created in 2014. Currently, it is led by Prof Lu Wei , consisting of several graduate
-                        students and researchers. The group subscribes to the design spirit of SUTD. The group has built
-                        a successful track record of publishing in the top ranked conferences. Members of StatNLP also collaborate
-                        with external organizations such as DSO National Laboratory.</p>
-
-                    <figure>
-                        <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
-                    </figure>
-
-                </div>
-                <!-- /.col-sm-6 -->
-
-                <div class="col-sm-6">
-
-                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
-
-                    <p>StatNLP focuses on the development of novel and efficient algorithms for solving text and language processing
-                        problems in machine learning. It is A Unified Framework for Structured Prediction designed for the
-                        purpose of fast prototyping of different machine learning and structured prediction algorithms</p>
-
-                    <ul class="list-arrow-right">
-
-                        <li>For structured prediction from theory to practice</li>
-                        <li>For machine learning from big data to insight</li>
-                        <li>Fast prototyping</li>
-                        <li>Various structured prediction models</li>
-                        <li>Capable of modeling structures</li>
-                    </ul>
-
-                </div>
-                <!-- /.col-sm-6 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <section id="facts" class="section bg-image-1 facts text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-calendar"></i>
-                    <h3>2018
-                        <br>On July</h3>
-
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-location"></i>
-                    <h3>SUTD
-                        <br>Singapore</h3>
-
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-pricetags"></i>
-                    <h3>Free
-                        <br>Registration</h3>
-
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-speakerphone"></i>
-                    <h3>SUTD
-                        <br>Speakers</h3>
-
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </section>
-
     <section id="registration" class="section registration">
         <div class="container">
             <div class="row">
@@ -185,15 +102,22 @@
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
                         </div>
-
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <b>Would you agree to share your information with industry partners for recruitment purposes ?</b>
+                            <div class="material-switch pull-right">
+                                <input id="agree" name="agree" type="checkbox" required />
+                                <label for="agree" class="label-info"></label>
+                            </div>
+                            <span id="error-agree" class="text-danger" style="display: none">Please agree before registration !</span>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="role" id="role" required>
@@ -212,17 +136,55 @@
                     </div>
                 </div>
                 <div class="text-center mt20">
-                    <button type="submit" class="btn btn-primary" id="registration-submit-btn">Register</button>
+                    <button type="submit" class="btn btn-info" id="registration-submit-btn">Register</button>
                 </div>
             </form>
         </div>
     </section>
 
+    <section id="facts" class="section bg-image-1 facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-calendar"></i>
+                    <h3>2018
+                        <br>30 July</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-ios-location"></i>
+                    <h3>SUTD
+                        <br>Singapore</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-pricetags"></i>
+                    <h3>Free
+                        <br>Registration</h3>
+
+                </div>
+                <div class="col-sm-3">
+
+                    <i class="ion-speakerphone"></i>
+                    <h3>International
+                        <br>Speakers</h3>
+
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+
     <section id="sponsors" class="section partner">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Workshop Sponsors</h3>
+                    <h3 class="section-title">Workshop NLP Industry Partners</h3>
                 </div>
             </div>
             <div class="row">
@@ -232,7 +194,7 @@
                 <div class="col-sm-6">
                     <a href="https://www.sginnovate.com/" target="_blank" class="partner-box partner-box-2"></a>
                 </div>
-               
+
             </div>
     </section>
 
@@ -274,9 +236,14 @@
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="assets/js/main.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.nav a').on('click', function () {
                 $('.navbar-collapse.in').collapse('hide');
+            });
+
+            $("#registration-submit-btn").click(function() {
+                if (!$('#agree').checked)
+                    $('#error-agree').show();                 
             });
         });
     </script>
