@@ -125,14 +125,14 @@
                         </div>
 
                         <div class="form-group text-center">
-                                Would you agree to share your registration information with industry partners ?
-                                <select name="role" id="agree" required>
-                                        <option disabled selected value>
-                                            <option value="yes">Yes</option>
-                                            <option value="no">No</option>
-                                    </select> 
+                            Would you agree to share your registration information with industry partners ?
+                            <select name="agree" id="agree" required>
+                                <option disabled selected value>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                            </select>
                             <br>
-                            <span id="error-agree" class="text-danger" style="display: none">Please agree before registration !</span>
+                            <span id="error-agree" class="text-danger" style="display: none">Please choose the option !</span>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -247,10 +247,9 @@
             });
 
             $("#registration-submit-btn").click(function () {
-                if ($("#agree").is(':selected'))
-                    $('#error-agree').hide();
-                else
+                if (!$("#agree").is(':selected'))
                     $('#error-agree').show();
+                $('#error-agree').hide();
             });
 
         });
