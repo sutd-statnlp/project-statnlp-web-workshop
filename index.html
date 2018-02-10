@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>StatNLP Workshop</title>
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
@@ -93,18 +93,22 @@
 
             <form action="#" id="registration-form">
                 <div class="row">
-                    <div class="col-md-12" id="registration-msg">
-                        <div id="form-success" class="alert alert-success" role="alert" style="display:none;"></div>
-                        <div id="form-error" class="alert alert-error" role="alert" style="display:none;"></div>
+
+                    <div class="col-sm-4">
+
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your name" id="fname" name="fname" required>
+                            <input type="text" class="form-control hidden" id="lname" name="lname" value=" ">
+                        </div>
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="role" id="role" required>
-                                <option value="" selected disabled>Attend as </option>
+                                <option value="" selected="selected" disabled>Attend as </option>
                                 <option>Faculty</option>
                                 <option>Researcher</option>
                                 <option>Industry</option>
@@ -117,26 +121,22 @@
                         <div class="form-group" id="formCustomRole" hidden>
                             <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole">
                         </div>
-                    </div>
-
-                    <div class="col-sm-6">
 
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
-                        </div>
-
-
-                        <div>
-                            <b>Would you agree to share your information with industry partners for recruitment purposes ?</b>
-                            <div class="material-switch pull-right">
-                                <input id="agree" name="agree" type="checkbox" required />
-                                <label for="agree" class="label-info"></label>
+                            <div class="checkbox">
+                                <label id="agreelable">
+                                    <input id="agree" name="agree" type="checkbox" required>
+                                    <span class="cr">
+                                        <i class="cr-icon glyphicon glyphicon-ok"></i>
+                                    </span>
+                                    Would you agree to share your information with industry partners for recruitment purposes ?
+                                </label>
                             </div>
                             <span id="error-agree" class="text-danger" style="display: none">Please agree before registration !</span>
                         </div>
+                    </div>
+                    <div class="col-sm-4">
+
                     </div>
                 </div>
 
@@ -189,7 +189,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Workshop NLP Industry Partners</h3>
+                    <h3 class="section-title">NLP Industry Partners</h3>
                 </div>
             </div>
             <div class="row">
@@ -247,9 +247,12 @@
             });
 
             $("#registration-submit-btn").click(function () {
-                if (!$('#agree').checked)
+                if ($("#agree").is(':checked'))
+                    $('#error-agree').hide();
+                else
                     $('#error-agree').show();
             });
+
         });
     </script>
 </body>
