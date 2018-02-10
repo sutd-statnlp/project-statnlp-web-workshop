@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>StatNLP Workshop</title>
+    <title>NLP and AI Workshop</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -75,7 +75,7 @@
 
             <p>
                 <strong>
-                    30 July 2018
+                    13 July 2018
                 </strong>
             </p>
 
@@ -124,16 +124,14 @@
                             <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole">
                         </div>
 
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <label id="agreelable">
-                                    <input id="agree" name="agree" type="checkbox" required>
-                                    <span class="cr">
-                                        <i class="cr-icon glyphicon glyphicon-ok"></i>
-                                    </span>
-                                    Would you agree to share your information with industry partners for recruitment purposes ?
-                                </label>
-                            </div>
+                        <div class="form-group text-center">
+                                Would you agree to share your registration information with industry partners ?
+                                <select name="role" id="agree" required>
+                                        <option disabled selected value>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                    </select> 
+                            <br>
                             <span id="error-agree" class="text-danger" style="display: none">Please agree before registration !</span>
                         </div>
                     </div>
@@ -156,7 +154,7 @@
 
                     <i class="ion-ios-calendar"></i>
                     <h3>2018
-                        <br>30 July</h3>
+                        <br>13 July</h3>
 
                 </div>
                 <div class="col-sm-3">
@@ -249,7 +247,7 @@
             });
 
             $("#registration-submit-btn").click(function () {
-                if ($("#agree").is(':checked'))
+                if ($("#agree").is(':selected'))
                     $('#error-agree').hide();
                 else
                     $('#error-agree').show();
