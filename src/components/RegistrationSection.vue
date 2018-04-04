@@ -1,0 +1,159 @@
+<template>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-12">
+        <div class="contact_info">
+          <h5>
+            Workshop Registration
+          </h5>
+          <ul class="social_list">
+            <li>
+              <a target="_blank" href="https://gitlab.com/sutd_nlp">
+                <i class="ion-pull-request"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/sutd-statnlp/">
+                <i class="ion-social-github"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://sutd.edu.sg/">
+                <i class="ion-university"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="http://www.statnlp.org/">
+                <i class="ion-ios-world"></i>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="icon_list pt50">
+            <li>
+              <i class="ion-location"></i>
+              <span>
+                8 Somapah Road
+                <br/> Singapore 487372
+              </span>
+            </li>
+            <li>
+              <i class="ion-planet"></i>
+              <span>
+                www.statnlp.org
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8 col-12">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="contact_form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name" v-model="user.name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" v-model="user.email" required>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="contact_form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="affiliation" placeholder="Affiliation"  v-model="user.affiliation" required>
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="role" id="role" v-model="user.role" v-if="!isCustomRole" required>
+                  <option value="" selected="selected" disabled="">Attend as </option>
+                  <option>Faculty</option>
+                  <option>Researcher</option>
+                  <option>Industry</option>
+                  <option>Government</option>
+                  <option>UG Student</option>
+                  <option>PG Student</option>
+                  <option value="other">Others</option>
+                </select>
+              </div>
+               <div class="form-group" id="formCustomRole" v-if="isCustomRole">
+                  <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole"  v-model="user.customRole" required="required">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="location" class="row">
+          <div class="col-12">
+              <div class="form-group text-center">
+                Would you agree to share your registration information with industry partners ?
+                <select name="agree" id="agree" v-model="user.agree" required="">
+                  <option disabled="" selected="" value="">
+                  </option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+                <br>
+                <span id="error-agree" class="text-danger" style="display: none">Please choose the option !</span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group text-center m-btns">
+                <button class="btn btn-rounded btn-primary">Register</button>
+                <button class="btn btn-rounded btn-primary ml-2" @click="reset">Reset</button>
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="col-12 mt10">
+        <!--map -->
+        <div id="map" data-lat="1.3413" data-lon="103.9638" class="map"></div>
+        <!--map end-->
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'RegistrationSection',
+  data () {
+    return {
+      user: {
+        name: null,
+        email: null,
+        affiliation: null,
+        role: '',
+        customRole: null,
+        agree: null
+      }
+    }
+  },
+  computed: {
+    isCustomRole () {
+      return this.user.role === 'other'
+    }
+  },
+  methods: {
+    reset () {
+      this.user = {
+        name: null,
+        email: null,
+        affiliation: null,
+        role: '',
+        customRole: null,
+        agree: null
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+#role {
+  height: 50px;
+  border-radius: 0;
+}
+.m-btns button {
+  width: 140px;
+}
+</style>

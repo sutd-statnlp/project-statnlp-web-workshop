@@ -1,4 +1,11 @@
-# StatNLP Workshop Website
+# StatNLP Workshop v2
 
-- http://workshop.statnlp.tk/
-- http://workshop.statnlp.tk/info
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+```

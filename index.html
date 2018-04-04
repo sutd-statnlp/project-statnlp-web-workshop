@@ -1,259 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
     <title>NLP and AI Workshop</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="shortcut icon" href="favicon.ico">
-</head>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="./static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./static/css/et-line.css" rel="stylesheet">
+    <link href="./static/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="./static/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="./static/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./static/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="./static/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
 
-<body data-spy="scroll" data-target="#site-nav">
-    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header">
+  <!-- jquery -->
+  <script src="./static/js/jquery.min.js"></script>
+  <!-- bootstrap -->
+  <script src="./static/js/popper.js"></script>
+  <script src="./static/js/bootstrap.min.js"></script>
+  <script src="./static/js/waypoints.min.js"></script>
+  <!--slick carousel -->
+  <script src="./static/js/owl.carousel.min.js"></script>
+  <!--parallax -->
+  <script src="./static/js/parallax.min.js"></script>
+  <!--Counter up -->
+  <script src="./static/js/jquery.counterup.min.js"></script>
+  <!--Counter down -->
+  <script src="./static/js/jquery.countdown.min.js"></script>
+  <!-- WOW JS -->
+  <script src="./static/js/wow.min.js"></script>
+  <!--map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQBvZnbU-SJqBtYxawwh4hkEGhl8UML-I"></script>
+  <!-- Custom js -->
+  <!-- <script src="./static/js/main.js"></script> -->
 
-                <!-- logo -->
-                <div class="site-branding">
-                    <!-- <a class="logo" href="/">
-                        <img class="m-logo" src="assets/images/logo.png" alt="Logo">
-                        <strong class="m-logo-title">StatNLP Workshop</strong>
-                    </a> -->
-                </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            </div>
-            <!-- /.navbar-header -->
-
-            <div class="collapse navbar-collapse" id="navbar-items">
-                <ul class="nav navbar-nav navbar-right">
-
-                    <!-- navigation menu -->
-                    <li>
-                        <a data-scroll href="#registration">
-                            <strong>Registration</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#facts">
-                            <strong>Overview</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#sponsors">
-                            <strong>Partners</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#location">
-                            <strong>Location</strong>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <header id="site-header" class="site-header valign-center">
-        <div class="intro">
-
-            <h1 id="m-title">Natural language processing / AI Workshop</h1>
-
-            <p>
-                <strong>
-                    13 July 2018
-                </strong>
-            </p>
-
-            <a class="btn btn-info m-btn-register" data-scroll href="#registration">Register Now</a>
-
-        </div>
-    </header>
-    <section id="registration" class="section registration">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Registration</h3>
-                </div>
-            </div>
-
-            <form action="#" id="registration-form">
-                <div class="row">
-
-                    <div class="col-sm-4">
-
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your name" id="fname" name="fname" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Affiliation" id="affiliation" name="affiliation" required>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name="role" id="role" required>
-                                <option value="" selected="selected" disabled>Attend as </option>
-                                <option>Faculty</option>
-                                <option>Researcher</option>
-                                <option>Industry</option>
-                                <option>Government</option>
-                                <option>UG Student</option>
-                                <option>PG Student</option>
-                                <option value="other">Others</option>
-                            </select>
-                        </div>
-                        <div class="form-group" id="formCustomRole" hidden>
-                            <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole">
-                        </div>
-
-                        <div class="form-group text-center">
-                            Would you agree to share your registration information with industry partners ?
-                            <select name="agree" id="agree" required>
-                                <option disabled selected value>
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                            </select>
-                            <br>
-                            <span id="error-agree" class="text-danger" style="display: none">Please choose the option !</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-
-                    </div>
-                </div>
-
-                <div class="text-center mt20">
-                    <button type="submit" class="btn btn-info" id="registration-submit-btn">Register</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section id="facts" class="section bg-image-1 facts text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-calendar"></i>
-                    <h3>2018
-                        <br>13 July</h3>
-
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-ios-location"></i>
-                    <h3>SUTD
-                        <br>Singapore</h3>
-
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-pricetags"></i>
-                    <h3>Free
-                        <br>Registration</h3>
-
-                </div>
-                <div class="col-sm-3">
-
-                    <i class="ion-speakerphone"></i>
-                    <h3>International
-                        <br>Speakers</h3>
-
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </section>
-
-
-    <section id="sponsors" class="section partner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">NLP Industry Partners</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <a href="https://www.alibaba.com/" target="_blank" class="partner-box partner-box-1"></a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="https://www.sginnovate.com/" target="_blank" class="partner-box partner-box-2"></a>
-                </div>
-
-            </div>
-    </section>
-
-    <section id="location" class="section location">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3 class="section-title">Location</h3>
-                    <address>
-                        <p>Singapore University of Technology and Design (SUTD)
-                            <br> 8 Somapah Rd, Singapore 487372
-                        </p>
-                    </address>
-                </div>
-                <div class="col-sm-9">
-                    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQBvZnbU-SJqBtYxawwh4hkEGhl8UML-I
-                          &q=SUTD Singapore" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="site-info">© Copyright 2018 StatNLP | All Rights Reserved
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- script -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-    <script src="assets/js/main.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.nav a').on('click', function () {
-                $('.navbar-collapse.in').collapse('hide');
-            });
-
-            $("#registration-submit-btn").click(function () {
-                if (!$("#agree").is(':selected'))
-                    $('#error-agree').show();
-                $('#error-agree').hide();
-            });
-
-        });
-    </script>
-</body>
-
+    <!-- built files will be auto injected -->
+  </body>
 </html>
