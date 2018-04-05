@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 
 /src/config
+
+node_modules
+src
