@@ -1,6 +1,6 @@
 # StatNLP Workshop v2
 
-## Build Setup
+## Development
 
 ``` bash
 # install dependencies
