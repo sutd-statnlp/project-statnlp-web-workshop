@@ -47,6 +47,7 @@
         </div>
       </div>
       <div class="col-md-8 col-12">
+        <form @submit.prevent="saveUser" v-if="!isRegisterd">
         <div class="row">
           <div class="col-md-6 col-12">
             <div class="contact_form">
@@ -76,32 +77,46 @@
                 </select>
               </div>
                <div class="form-group" id="formCustomRole" v-if="isCustomRole">
-                  <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole"  v-model="user.customRole" required="required">
+                  <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole"  v-model="user.customRole" :required="isCustomRole">
                 </div>
             </div>
           </div>
+
         </div>
         <div id="location" class="row">
           <div class="col-12">
               <div class="form-group text-center">
-                Would you agree to share your registration information with industry partners ?
-                <select name="agree" id="agree" v-model="user.agree" required="">
-                  <option disabled="" selected="" value="">
-                  </option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-                <br>
-                <span id="error-agree" class="text-danger" style="display: none">Please choose the option !</span>
+                <label>
+                  Would you agree to share your registration information with industry partners ?
+                  <select name="agree" id="agree" v-model="user.agree" required="">
+                    <option disabled="" selected="" value="">
+                    </option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group text-center m-btns">
-                <button class="btn btn-rounded btn-primary">Register</button>
-                <button class="btn btn-rounded btn-primary ml-2" @click="reset">Reset</button>
+                <button type="submit" class="btn btn-rounded btn-primary">Register</button>
+                <button type="button" class="btn btn-rounded btn-primary ml-2" @click="reset">Reset</button>
               </div>
             </div>
-
+        </div>
+        </form>
+        <div class="row" v-if="isRegisterd">
+          <div class="col-12 text-center">
+            <h4 class="text-success">
+              Registration is successful !
+            </h4>
+            <h5>
+               We look forward to seeing you.
+            </h5>
+            <h5>
+              Thank you !
+            </h5>
+          </div>
         </div>
       </div>
       <div class="col-12 mt10">
@@ -114,6 +129,7 @@
 </template>
 
 <script>
+import DatabaseService from '@/services/DatabaseService'
 export default {
   name: 'RegistrationSection',
   data () {
@@ -125,7 +141,8 @@ export default {
         role: '',
         customRole: null,
         agree: null
-      }
+      },
+      isRegisterd: false
     }
   },
   computed: {
@@ -143,6 +160,10 @@ export default {
         customRole: null,
         agree: null
       }
+    },
+    saveUser () {
+      DatabaseService.saveUser(this.user)
+      this.isRegisterd = true
     }
   }
 }
