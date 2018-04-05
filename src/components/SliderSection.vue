@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div class="cover_item" style="background: url('./static/img/bg/slider2-normal.png');">
+      <div class="cover_item" style="background: url('./static/img/bg/slider2-normal-min.png');">
         <div class="slider_content">
           <div class="slider-content-inner">
             <div class="container">

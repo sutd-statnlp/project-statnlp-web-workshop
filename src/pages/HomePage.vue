@@ -52,7 +52,7 @@ export default {
   mounted () {
     let js = document.createElement('script')
     js.setAttribute('src', './static/js/main.js')
-    document.head.appendChild(js)
+    document.body.appendChild(js)
   }
 }
 </script>
