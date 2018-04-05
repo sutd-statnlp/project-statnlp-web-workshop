@@ -53,11 +53,6 @@ $(document).ready(function() {
      COUNTER JS
      ----------------------------------------------------------- */
 
-    $('.counter').counterUp({
-        delay: 5,
-        time: 3000
-    });
-
     $(".countdown")
         .countdown("2018/07/13", function(event) {
             $(this).html(
@@ -108,13 +103,13 @@ $(document).ready(function() {
     /* Animated progress bars
      /* ------------------------------------- */
 
-    var waypoints = $('.progress_container').waypoint(function() {
-        $('.progress .progress-bar').progressbar({
-            transition_delay: 1000
-        });
-    },{
-        offset: '50%'
-    });
+    // var waypoints = $('.progress_container').waypoint(function() {
+    //     $('.progress .progress-bar').progressbar({
+    //         transition_delay: 1000
+    //     });
+    // },{
+    //     offset: '50%'
+    // });
 
 
         /* --------------------------------------------------------
