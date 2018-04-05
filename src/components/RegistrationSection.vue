@@ -177,4 +177,7 @@ export default {
 .m-btns button {
   width: 140px;
 }
+.form-control {
+  border-radius: 4px;
+}
 </style>
