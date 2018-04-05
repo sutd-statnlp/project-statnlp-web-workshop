@@ -1,3 +1,9 @@
 _site/
 .sass-cache/
 *main.js
+v1
+static
+info
+node_modules
+bower_components
+src/config

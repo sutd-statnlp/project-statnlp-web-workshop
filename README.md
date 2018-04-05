@@ -1,4 +1,4 @@
 # StatNLP Workshop Website
 
-- http://workshop.statnlp.tk/
-- http://workshop.statnlp.tk/info
+- http://workshop.statnlp.org/
+- http://workshop.statnlp.org/info
