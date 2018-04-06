@@ -179,5 +179,7 @@ export default {
 }
 .form-control {
   border-radius: 4px;
+  font-style: normal;
+  font-size: 1em;
 }
 </style>
