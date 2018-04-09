@@ -1,0 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../static/css/font-awesome.min.css'
+import '../static/css/et-line.css'
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import '../static/css/owl.theme.default.min.css'
+import '../static/css/animate.min.css'
+import '../static/css/main.css'

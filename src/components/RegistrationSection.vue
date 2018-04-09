@@ -121,7 +121,9 @@
       </div>
       <div class="col-12 mt10">
         <!--map -->
-        <div id="map" data-lat="1.3413" data-lon="103.9638" class="map"></div>
+        <iframe  class="map" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4-kmzdg82jERbE6ZRhhr5X0&key=AIzaSyBQBvZnbU-SJqBtYxawwh4hkEGhl8UML-I&zoom=16" allowfullscreen>
+        </iframe>
         <!--map end-->
       </div>
     </div>

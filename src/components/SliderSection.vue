@@ -56,11 +56,26 @@
 </template>
 
 <script>
+import 'owl.carousel'
+
 export default {
   name: 'SliderSection',
   data () {
     return {
     }
+  },
+  mounted () {
+    $('.cover_slider').owlCarousel({
+      loop: true,
+      autoplay: true,
+      smartSpeed: 1000,
+      autoplayHoverPause: false,
+      dots: true,
+      nav: false,
+      items: 1,
+      animateOut: 'fadeOut',
+      dotsContainer: '.cover_dots'
+    })
   }
 }
 </script>

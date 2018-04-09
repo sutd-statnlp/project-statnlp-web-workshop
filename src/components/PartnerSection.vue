@@ -21,11 +21,38 @@
 </template>
 
 <script>
+import 'owl.carousel'
+
 export default {
   name: 'PartnerSection',
   data () {
     return {
     }
+  },
+  mounted () {
+    $('.brand_carousel').owlCarousel({
+      loop: true,
+      autoplay: true,
+      smartSpeed: 450,
+      autoplayHoverPause: false,
+      dots: false,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 2
+
+        },
+        1000: {
+          items: 2
+
+        }
+      },
+      items: 2
+    })
   }
 }
 </script>

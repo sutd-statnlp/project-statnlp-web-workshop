@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import {WOW} from 'wowjs'
 import OverviewSection from '@/components/OverviewSection'
 import CountdownSection from '@/components/CountdownSection'
 import PartnerSection from '@/components/PartnerSection'
@@ -50,9 +51,27 @@ export default {
     }
   },
   mounted () {
-    let js = document.createElement('script')
-    js.setAttribute('src', './static/js/main.js')
-    document.body.appendChild(js)
+    this.initWow()
+    this.initHeader()
+  },
+  methods: {
+    initWow () {
+      var wow = new WOW({
+        animateClass: 'animated',
+        offset: 10,
+        mobile: true
+      })
+      wow.init()
+    },
+    initHeader () {
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() < 100) {
+          $('.header').removeClass('sticky_header')
+        } else {
+          $('.header').addClass('sticky_header')
+        }
+      })
+    }
   }
 }
 </script>

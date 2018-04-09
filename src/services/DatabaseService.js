@@ -1,6 +1,8 @@
 import databaseConfig from '@/config/DatabaseConfig'
 import DataUtil from '@/utils/DataUtil'
 
+import firebase from 'firebase'
+
 class DatabaseService {
   constructor () {
     firebase.initializeApp(databaseConfig)
