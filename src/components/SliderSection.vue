@@ -28,7 +28,7 @@
             <div class="container">
               <div class="slider-content-left">
                 <h2 class="text-white">
-                  The 2018 Singapore Symposium on Artificial Intelligence
+                  The 2018 Singapore Symposium on Natural Language Processing
                 </h2>
                 <p class="cover-date">
                   <strong>
