@@ -6,12 +6,13 @@
           <div class="slider-content-inner">
             <div class="container">
               <div class="slider-content-center">
-                <h2 class="cover-title">
-                  NATURAL LANGUAGE PROCESSING
+                <h2 class="text-white">
+                  The 2018 Singapore Symposium on Natural Language Processing
                 </h2>
-                <strong class="cover-xl-text">workshop</strong>
                 <p class="cover-date">
-                  13 JULY 2018 - SUTD, Singapore.
+                 <strong>
+                    13 JULY 2018 - SUTD, Singapore.
+                 </strong>
                 </p>
                 <a href="#registration" class="btn btn-primary btn-rounded">
                   Register Now
@@ -26,12 +27,13 @@
           <div class="slider-content-inner">
             <div class="container">
               <div class="slider-content-left">
-                <h2 class="cover-title">
-                 Artificial Intelligence
+                <h2 class="text-white">
+                  The 2018 Singapore Symposium on Artificial Intelligence
                 </h2>
-                <strong class="cover-xl-text">workshop</strong>
                 <p class="cover-date">
-                  13 JULY 2018 - SUTD, Singapore.
+                  <strong>
+                    13 JULY 2018 - SUTD, Singapore.
+                  </strong>
                 </p>
                 <a href="#registration" class=" btn btn-primary btn-rounded">
                   Register Now
