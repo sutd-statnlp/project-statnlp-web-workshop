@@ -3,10 +3,10 @@
     <div class="row justify-content-center">
       <div class="col-md-4 col-12">
         <div class="contact_info">
-          <h5>
+          <h4>
             Workshop Registration
-          </h5>
-          <ul class="social_list">
+          </h4>
+          <ul class="social_list d-none d-sm-block">
             <li>
               <a target="_blank" href="https://gitlab.com/sutd_nlp">
                 <i class="ion-pull-request"></i>
@@ -29,7 +29,7 @@
             </li>
           </ul>
 
-          <ul class="icon_list pt50">
+          <ul class="icon_list pt50 d-none d-sm-block">
             <li>
               <i class="ion-location"></i>
               <span>
