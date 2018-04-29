@@ -4,7 +4,7 @@
       <div class="col-md-4 col-12">
         <div class="contact_info">
           <h4>
-            Workshop Registration
+            Registration
           </h4>
           <ul class="social_list d-none d-sm-block">
             <li>
