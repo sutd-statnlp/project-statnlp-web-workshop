@@ -2,7 +2,7 @@
   <div class="container">
     <div class="section_title">
       <h3 class="title">
-        our partners
+        Industry partners
       </h3>
     </div>
     <div id="pa-carousel" class="brand_carousel owl-carousel">
