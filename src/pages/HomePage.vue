@@ -18,7 +18,10 @@
     </section>
     <!--event count down end-->
     <!--brands section -->
-    <section id="partners" class="bg-gray pt100 pb100">
+    <section id="organizers" class="bg-gray pt100 pb100">
+      <CoOrganizerSection/>
+    </section>
+     <section id="partners" class="bg-gray pt100 pb100">
       <PartnerSection/>
     </section>
     <!--brands section end-->
@@ -35,6 +38,7 @@ import {WOW} from 'wowjs'
 import OverviewSection from '@/components/OverviewSection'
 import CountdownSection from '@/components/CountdownSection'
 import PartnerSection from '@/components/PartnerSection'
+import CoOrganizerSection from '@/components/CoOrganizerSection'
 import RegistrationSection from '@/components/RegistrationSection'
 import SliderSection from '@/components/SliderSection'
 export default {
@@ -43,7 +47,8 @@ export default {
     CountdownSection,
     PartnerSection,
     RegistrationSection,
-    SliderSection
+    SliderSection,
+    CoOrganizerSection
   },
   name: 'HomePage',
   data () {

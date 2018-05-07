@@ -5,7 +5,7 @@
         our partners
       </h3>
     </div>
-    <div class="brand_carousel owl-carousel">
+    <div id="pa-carousel" class="brand_carousel owl-carousel">
       <div class="brand_item text-center">
         <a target="_blank" href="https://www.alibaba.com/">
           <img src="static/img/partners/p1.png" alt="brand">
@@ -30,7 +30,7 @@ export default {
     }
   },
   mounted () {
-    $('.brand_carousel').owlCarousel({
+    $('#pa-carousel').owlCarousel({
       loop: true,
       autoplay: true,
       smartSpeed: 450,
@@ -40,7 +40,7 @@ export default {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 2
+          items: 1
         },
         600: {
           items: 2
