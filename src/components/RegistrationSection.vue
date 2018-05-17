@@ -40,7 +40,7 @@
             <li>
               <i class="ion-planet"></i>
               <span>
-                www.statnlp.org
+                event.statnlp.org
               </span>
             </li>
           </ul>
