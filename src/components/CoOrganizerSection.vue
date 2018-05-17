@@ -50,6 +50,7 @@ export default {
       autoplay: true,
       smartSpeed: 450,
       autoplayHoverPause: false,
+      autoplayTimeout: 4000,
       dots: false,
       nav: false,
       responsiveClass: true,
