@@ -11,7 +11,8 @@
             <div class="col-md-3 col-sm-6" v-for="(item, index) in speakers" :key="index">
                 <div class="speaker_box">
                     <div class="speaker_img">
-                        <a :href="item.link" target="_blank"><img :src="item.photoUrl" alt="speaker name"></a>
+                        <a v-if="item.link" :href="item.link" target="_blank"><img :src="item.photoUrl" alt="speaker name"></a>
+                        <img v-if="!item.link"  :src="item.photoUrl" alt="speaker name">
                         <div class="info_box">
                             <h5 class="name">{{item.name}}</h5>
                             <p class="position">{{item.org}}</p>
@@ -40,6 +41,12 @@ export default {
           org: 'University of Washington',
           photoUrl: '/static/img/speakers/noah-smith-min.png',
           link: 'https://homes.cs.washington.edu/~nasmith/'
+        },
+        {
+          name: 'Jun\'ichi Tsujii',
+          org: 'National Institute of AIST',
+          photoUrl: '/static/img/speakers/junichi-min.png',
+          link: null
         }
       ]
     }

@@ -22,5 +22,10 @@ export default {
 </script>
 
 <style>
-
+  .tooltip-inner {
+      background-color: #1D67BD!important;
+  }
+  .tooltip.bs-tooltip-top .arrow:before {
+      border-top-color: #1D67BD !important;
+  }
 </style>
