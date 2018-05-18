@@ -8,6 +8,9 @@
                       <a class="nav-link " href="#overview">Overview</a>
                   </li>
                   <li class="nav-item">
+                      <a class="nav-link " href="#speakers">Speakers</a>
+                  </li>
+                  <li class="nav-item">
                       <a class="nav-link " href="#organizers">Organizers</a>
                   </li>
                   <li class="nav-item">

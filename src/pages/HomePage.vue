@@ -17,9 +17,17 @@
         <CountdownSection/>
     </section>
     <!--event count down end-->
+    <!--speaker section-->
+    <section id="speakers" class="pt100 pb100">
+      <SpeakerSection/>
+    </section>
+    <!--speaker section end -->
     <!--brands section -->
     <section id="organizers" class="bg-gray pt100 pb100">
       <CoOrganizerSection/>
+    </section>
+    <section class="pb100">
+      <OrganizerNameSection/>
     </section>
      <section id="partners" class="bg-gray pt100 pb100">
       <PartnerSection/>
@@ -41,6 +49,9 @@ import PartnerSection from '@/components/PartnerSection'
 import CoOrganizerSection from '@/components/CoOrganizerSection'
 import RegistrationSection from '@/components/RegistrationSection'
 import SliderSection from '@/components/SliderSection'
+import SpeakerSection from '@/components/SpeakerSection'
+import OrganizerNameSection from '@/components/OrganizerNameSection'
+
 export default {
   components: {
     OverviewSection,
@@ -48,7 +59,9 @@ export default {
     PartnerSection,
     RegistrationSection,
     SliderSection,
-    CoOrganizerSection
+    CoOrganizerSection,
+    SpeakerSection,
+    OrganizerNameSection
   },
   name: 'HomePage',
   data () {

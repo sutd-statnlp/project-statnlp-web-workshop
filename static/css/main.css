@@ -2473,8 +2473,8 @@ Cover
 }
 .speaker_box:hover .speaker_img img {
   width: 100%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
