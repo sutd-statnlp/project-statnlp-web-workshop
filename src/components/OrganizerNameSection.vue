@@ -1,67 +1,60 @@
 <template>
     <div class="container">
-         <div class="row justify-content-center pt80">
-            <div class="col-md-3 col-12">
+        <div class="row justify-content-center pt80">
+            <div class="col-md-4 col-12">
                 <div class="price_box active">
                     <div class="price_header">
                         <h4>
                             <i class="ion-android-people"></i>
                         </h4>
                     </div>
-                    <div class="price_header">
-                      <h4 v-for="(item, index) in orgs.slice(0,Orgslength/4)" :key="index">
-                       <a v-b-tooltip.hover :title="item.org">
+                    <div class="price_header"  v-for="(item, index) in orgs.slice(0, Orgslength/3)" :key="index">
+                      <h4>
+                       <a>
                           <strong>{{item.name}}</strong>
                         </a>
                       </h4>
+                      <h6>
+                        {{item.org}}
+                      </h6>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-12">
+            <div class="col-md-4 col-12">
                 <div class="price_box active">
                     <div class="price_header">
                         <h4>
                             <i class="ion-android-people"></i>
                         </h4>
                     </div>
-                    <div class="price_header">
-                      <h4 v-for="(item, index) in orgs.slice(Orgslength/4,Orgslength/2)" :key="index">
-                        <a v-b-tooltip.hover :title="item.org">
+                    <div class="price_header"  v-for="(item, index) in orgs.slice(Orgslength/3,Orgslength/3 + Orgslength/3)" :key="index">
+                      <h4>
+                        <a>
                           <strong>{{item.name}}</strong>
                         </a>
                       </h4>
+                      <h6>
+                        {{item.org}}
+                      </h6>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-12">
+            <div class="col-md-4 col-12">
                 <div class="price_box active">
                     <div class="price_header">
                         <h4>
                             <i class="ion-android-people"></i>
                         </h4>
                     </div>
-                    <div class="price_header">
-                      <h4 v-for="(item, index) in orgs.slice(Orgslength/2,Orgslength/2 + Orgslength/4)" :key="index">
-                        <a v-b-tooltip.hover :title="item.org">
+                    <div class="price_header" v-for="(item, index) in orgs.slice(Orgslength/3 + Orgslength/3,Orgslength)" :key="index">
+                      <h4>
+                        <a>
                           <strong>{{item.name}}</strong>
                         </a>
                       </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-12">
-                <div class="price_box active">
-                    <div class="price_header">
-                        <h4>
-                            <i class="ion-android-people"></i>
-                        </h4>
-                    </div>
-                    <div class="price_header">
-                      <h4 v-for="(item, index) in orgs.slice(Orgslength/2 + Orgslength/4,Orgslength)" :key="index">
-                        <a v-b-tooltip.hover :title="item.org">
-                          <strong>{{item.name}}</strong>
-                        </a>
-                      </h4>
+                      <h6>
+                        {{item.org}}
+                      </h6>
                     </div>
                 </div>
             </div>
@@ -88,6 +81,10 @@ export default {
           org: 'Nanyang Technological University'
         },
         {
+          name: 'Wei Lu',
+          org: 'Singapore University of Technology and Design'
+        },
+        {
           name: 'Nancy Chen',
           org: 'Institute for Infocomm Research'
         },
@@ -102,10 +99,6 @@ export default {
         {
           name: 'Min-Yen Kan',
           org: 'National University of Singapore'
-        },
-        {
-          name: 'Wei Lu',
-          org: 'Singapore University of Technology and Design'
         },
         {
           name: 'Haizhou Li',
