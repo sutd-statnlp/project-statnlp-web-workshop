@@ -32,13 +32,13 @@ export default {
         {
           name: 'Ido Dagan',
           org: 'Bar Ilan University',
-          photoUrl: '/static/img/speakers/ido-dagan.png',
+          photoUrl: '/static/img/speakers/ido-dagan-min.png',
           link: 'http://u.cs.biu.ac.il/~dagan/'
         },
         {
           name: 'Noah Smith',
           org: 'University of Washington',
-          photoUrl: '/static/img/speakers/noah-smith.png',
+          photoUrl: '/static/img/speakers/noah-smith-min.png',
           link: 'https://homes.cs.washington.edu/~nasmith/'
         }
       ]
