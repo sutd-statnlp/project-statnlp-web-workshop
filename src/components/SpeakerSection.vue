@@ -46,7 +46,7 @@ export default {
           name: 'Jun\'ichi Tsujii',
           org: 'National Institute of AIST',
           photoUrl: '/static/img/speakers/junichi-min.png',
-          link: null
+          link: 'https://en.wikipedia.org/wiki/Jun%27ichi_Tsujii'
         }
       ]
     }
