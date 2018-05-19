@@ -1,62 +1,22 @@
 <template>
     <div class="container">
         <div class="row justify-content-center pt80">
-            <div class="col-md-4 col-12">
-                <div class="price_box active">
-                    <div class="price_header">
-                        <h4>
-                            <i class="ion-android-people"></i>
-                        </h4>
-                    </div>
-                    <div class="price_header"  v-for="(item, index) in orgs.slice(0, Orgslength/3)" :key="index">
-                      <h4>
-                       <a>
-                          <strong>{{item.name}}</strong>
-                        </a>
-                      </h4>
-                      <h6>
-                        {{item.org}}
-                      </h6>
-                    </div>
-                </div>
+            <div class="col-md-5 col-12">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" v-for="(item, index) in orgs.slice(0, Orgslength/2)" :key="index">
+                  <strong><i class="ion-person"></i> {{item.name}}</strong>
+                  <br>
+                  {{item.org}}
+                </li>
+              </ul>
             </div>
-            <div class="col-md-4 col-12">
-                <div class="price_box active">
-                    <div class="price_header">
-                        <h4>
-                            <i class="ion-android-people"></i>
-                        </h4>
-                    </div>
-                    <div class="price_header"  v-for="(item, index) in orgs.slice(Orgslength/3,Orgslength/3 + Orgslength/3)" :key="index">
-                      <h4>
-                        <a>
-                          <strong>{{item.name}}</strong>
-                        </a>
-                      </h4>
-                      <h6>
-                        {{item.org}}
-                      </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="price_box active">
-                    <div class="price_header">
-                        <h4>
-                            <i class="ion-android-people"></i>
-                        </h4>
-                    </div>
-                    <div class="price_header" v-for="(item, index) in orgs.slice(Orgslength/3 + Orgslength/3,Orgslength)" :key="index">
-                      <h4>
-                        <a>
-                          <strong>{{item.name}}</strong>
-                        </a>
-                      </h4>
-                      <h6>
-                        {{item.org}}
-                      </h6>
-                    </div>
-                </div>
+            <div class="col-md-5 col-12">
+               <ul class="list-group list-group-flush">
+                <li class="list-group-item" v-for="(item, index) in orgs.slice(Orgslength/2, Orgslength)" :key="index">
+                  <strong><i class="ion-person"></i> {{item.name}}</strong> <br>
+                  {{item.org}}
+                </li>
+              </ul>
             </div>
         </div>
     </div>
@@ -128,4 +88,7 @@ export default {
 </script>
 
 <style scoped>
+.list-group-item strong {
+  color: #1D67BD;
+}
 </style>

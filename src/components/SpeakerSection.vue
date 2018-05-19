@@ -58,4 +58,7 @@ export default {
 .name {
   color: white !important;
 }
+.info_box {
+  height: 56px;
+}
 </style>
