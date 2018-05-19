@@ -15,7 +15,8 @@
                         <img v-if="!item.link"  :src="item.photoUrl" alt="speaker name">
                         <div class="info_box">
                             <h5 class="name">{{item.name}}</h5>
-                            <p class="position">{{item.org}}</p>
+                            <p class="position">{{item.org}}<span v-if="item.country">, {{item.country}}</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -34,25 +35,29 @@ export default {
           name: 'Ido Dagan',
           org: 'Bar Ilan University',
           photoUrl: '/static/img/speakers/ido-dagan-min.png',
-          link: 'http://u.cs.biu.ac.il/~dagan/'
+          link: 'http://u.cs.biu.ac.il/~dagan/',
+          country: 'Israel'
         },
         {
           name: 'Noah Smith',
           org: 'University of Washington',
           photoUrl: '/static/img/speakers/noah-smith-min.png',
-          link: 'https://homes.cs.washington.edu/~nasmith/'
+          link: 'https://homes.cs.washington.edu/~nasmith/',
+          country: 'USA'
         },
         {
           name: 'Jun\'ichi Tsujii',
           org: 'National Institute of AIST',
           photoUrl: '/static/img/speakers/junichi-min.png',
-          link: 'https://en.wikipedia.org/wiki/Jun%27ichi_Tsujii'
+          link: 'https://en.wikipedia.org/wiki/Jun%27ichi_Tsujii',
+          country: 'Japan'
         },
         {
-          name: 'MORE',
-          org: 'Oncoming',
-          photoUrl: '/static/img/speakers/more1-min.png',
-          link: null
+          name: 'MORE...',
+          org: 'TBA',
+          photoUrl: '/static/img/speakers/more-shadow-min.png',
+          link: null,
+          country: null
         }
       ]
     }
