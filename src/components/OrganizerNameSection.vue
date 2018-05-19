@@ -81,9 +81,11 @@ export default {
   },
   created () {
     this.orgs.sort(function (a, b) {
-      var textA = a.name.toUpperCase()
-      var textB = b.name.toUpperCase()
-      return (textA < textB) ? -1 : (textA > textB) ? 1 : 0
+      let aNames = a.name.split(' ')
+      let bNames = b.name.split(' ')
+      var aLastName = aNames[aNames.length - 1].toUpperCase()
+      var bLastName = bNames[bNames.length - 1].toUpperCase()
+      return (aLastName < bLastName) ? -1 : (aLastName > bLastName) ? 1 : 0
     })
   },
   computed: {
