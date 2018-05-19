@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
-    "bootstrap-vue": "^2.0.0-rc.10",
     "firebase": "^4.12.1",
     "jquery": "^2.1.4",
     "jquery-countdown": "^2.2.0",
