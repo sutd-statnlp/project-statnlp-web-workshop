@@ -47,6 +47,12 @@ export default {
           org: 'National Institute of AIST',
           photoUrl: '/static/img/speakers/junichi-min.png',
           link: 'https://en.wikipedia.org/wiki/Jun%27ichi_Tsujii'
+        },
+        {
+          name: 'MORE',
+          org: 'Oncoming',
+          photoUrl: '/static/img/speakers/more1-min.png',
+          link: null
         }
       ]
     }
