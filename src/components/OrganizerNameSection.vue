@@ -19,6 +19,17 @@
               </ul>
             </div>
         </div>
+        <div class="row justify-content-center pt60">
+            <div class="col-md-5 col-12 text-center">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <strong>General Chair/Local Arrangement</strong>
+                  <br>
+                  <a target="_blank" href="https://istd.sutd.edu.sg/people/faculty/lu-wei">Wei Lu</a>
+                </li>
+              </ul>
+            </div>
+        </div>
     </div>
 </template>
 
