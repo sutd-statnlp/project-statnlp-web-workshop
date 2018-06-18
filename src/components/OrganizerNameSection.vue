@@ -19,21 +19,11 @@
               </ul>
             </div>
         </div>
-        <div class="row justify-content-center pt60">
-            <div class="col-md-5 col-12 text-center">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <strong>General Chair/Local Arrangement</strong>
-                  <br>
-                  <a target="_blank" href="https://istd.sutd.edu.sg/people/faculty/lu-wei">Wei Lu</a>
-                </li>
-              </ul>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
+import DataUtil from '@/utils/DataUtil'
 export default {
   name: 'OrganizerNameSection',
   data () {
@@ -91,13 +81,7 @@ export default {
     }
   },
   created () {
-    this.orgs.sort(function (a, b) {
-      let aNames = a.name.split(' ')
-      let bNames = b.name.split(' ')
-      var aLastName = aNames[aNames.length - 1].toUpperCase()
-      var bLastName = bNames[bNames.length - 1].toUpperCase()
-      return (aLastName < bLastName) ? -1 : (aLastName > bLastName) ? 1 : 0
-    })
+    DataUtil.sortAlphabeByName(this.orgs)
   },
   computed: {
     Orgslength () {

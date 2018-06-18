@@ -16,3 +16,4 @@ yarn-error.log*
 /src/config
 v1
 static404
+_site

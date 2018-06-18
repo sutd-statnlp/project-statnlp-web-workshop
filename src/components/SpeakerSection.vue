@@ -21,11 +21,23 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="speaker_box">
+                    <div class="speaker_img">
+                        <img src="/static/img/speakers/more-shadow-min.png" alt="speaker name">
+                        <div class="info_box">
+                            <h5 class="name">MORE...</h5>
+                            <p class="position">TBA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import DataUtil from '@/utils/DataUtil'
 export default {
   name: 'SpeakerSection',
   data () {
@@ -53,14 +65,24 @@ export default {
           country: 'Japan'
         },
         {
-          name: 'MORE...',
-          org: 'TBA',
-          photoUrl: '/static/img/speakers/more-shadow-min.png',
-          link: null,
-          country: null
+          name: 'Vincent Ng',
+          org: 'University of Texas',
+          photoUrl: '/static/img/speakers/vincent-ng-min.png',
+          link: 'http://www.hlt.utdallas.edu/~vince/',
+          country: 'USA'
+        },
+        {
+          name: 'Thang Luong',
+          org: 'Google Brain',
+          photoUrl: '/static/img/speakers/thang-luong-min.png',
+          link: 'https://nlp.stanford.edu/~lmthang/',
+          country: 'USA'
         }
       ]
     }
+  },
+  created () {
+    DataUtil.sortAlphabeByName(this.speakers)
   }
 }
 </script>
