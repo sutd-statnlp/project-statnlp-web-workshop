@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="row justify-content-center no-gutters">
-            <div class="col-md-3 col-sm-6" v-for="(item, index) in speakers" :key="index">
+            <div class="col-md-2 col-sm-6" v-for="(item, index) in speakers" :key="index">
                 <div class="speaker_box">
                     <div class="speaker_img">
                         <a v-if="item.link" :href="item.link" target="_blank"><img :src="item.photoUrl" alt="speaker name"></a>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-2 col-sm-6">
                 <div class="speaker_box">
                     <div class="speaker_img">
                         <img src="/static/img/speakers/more-shadow-min.png" alt="speaker name">
@@ -92,6 +92,9 @@ export default {
   color: white !important;
 }
 .info_box {
-  height: 56px;
+  height: 54px;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  bottom: 0px !important;
 }
 </style>
