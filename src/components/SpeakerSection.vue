@@ -67,7 +67,7 @@ export default {
         {
           name: 'Vincent Ng',
           org: 'University of Texas',
-          photoUrl: '/static/img/speakers/vincent-ng-min.png',
+          photoUrl: '/static/img/speakers/vincent-min.png',
           link: 'http://www.hlt.utdallas.edu/~vince/',
           country: 'USA'
         },
