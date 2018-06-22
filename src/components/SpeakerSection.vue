@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-6">
+            <!-- <div class="col-md-2 col-sm-6">
                 <div class="speaker_box">
                     <div class="speaker_img">
                         <img src="/static/img/speakers/more-shadow-min.png" alt="speaker name">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -77,6 +77,13 @@ export default {
           photoUrl: '/static/img/speakers/thang-luong-min.png',
           link: 'https://nlp.stanford.edu/~lmthang/',
           country: 'USA'
+        },
+        {
+          name: 'Linlin Li',
+          org: 'Alibaba',
+          photoUrl: '/static/img/speakers/linlin-min.png',
+          link: 'https://perso.limsi.fr/linlin/',
+          country: 'China'
         }
       ]
     }
