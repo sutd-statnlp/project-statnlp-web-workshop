@@ -19,6 +19,44 @@
               </ul>
             </div>
         </div>
+        <div class="row justify-content-center pt80">
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_highlight">
+                        General Chair
+                    </div>
+                   <div class="price_header">
+                       <a target="_blank" href="https://istd.sutd.edu.sg/people/faculty/lu-wei">
+                         <h5>Wei Lu</h5>
+                       </a>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_highlight">
+                        Host
+                    </div>
+                    <div class="price_header">
+                        <a target="_blank" href="https://istd.sutd.edu.sg/">
+                         <h5>ISTD Pillar, SUTD</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_highlight">
+                        Local Arrangement
+                    </div>
+                    <div class="price_header">
+                        <a target="_blank" href="http://www.statnlp.org/">
+                         <h5>SUTD StatNLP</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -94,5 +132,8 @@ export default {
 <style scoped>
 .list-group-item strong {
   color: #1D67BD;
+}
+.price_box {
+  padding-bottom: 50px;
 }
 </style>
