@@ -18,8 +18,11 @@
     </section>
     <!--event count down end-->
     <!--speaker section-->
-    <section id="speakers" class="pt100 pb100">
+    <section id="speakers" class="pt100">
       <SpeakerSection/>
+    </section>
+    <section class="pt60 pb60">
+      <ProgrammeSection/>
     </section>
     <!--speaker section end -->
     <!--brands section -->
@@ -51,6 +54,7 @@ import RegistrationSection from '@/components/RegistrationSection'
 import SliderSection from '@/components/SliderSection'
 import SpeakerSection from '@/components/SpeakerSection'
 import OrganizerNameSection from '@/components/OrganizerNameSection'
+import ProgrammeSection from '@/components/ProgrammeSection'
 
 export default {
   components: {
@@ -61,7 +65,8 @@ export default {
     SliderSection,
     CoOrganizerSection,
     SpeakerSection,
-    OrganizerNameSection
+    OrganizerNameSection,
+    ProgrammeSection
   },
   name: 'HomePage',
   data () {
