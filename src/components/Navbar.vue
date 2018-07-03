@@ -40,7 +40,8 @@ export default {
   mounted () {
     SmoothScroll('a[href*="#"]', {
       speed: 500,
-      offset: 0
+      offset: 0,
+      ignore: '[data-scroll-ignore]'
     })
   }
 }
