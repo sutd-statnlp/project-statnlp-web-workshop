@@ -81,8 +81,8 @@ export default {
           link: 'http://u.cs.biu.ac.il/~dagan/',
           country: 'Israel',
           talk: {
-            title: ``,
-            abstract: ``
+            title: `Consolidating Textual Information`,
+            abstract: `How can we capture effectively the information expressed in multiple texts? How can we allow people, as well as computer applications, to easily explore it? The current semantic NLP pipeline typically ends at the single sentence or text level, putting the burden on applications to consolidate related information across different texts. Further, semantic representations, which may provide the basis for text consolidation, are often based on non-trivial pre-specified schemata, which require expert annotation and hence complicate the creation of large scale corpora for training. In this talk, I will outline a research program, titled Natural Knowledge, whose goals are to represent the consolidated information conveyed in multiple texts and to communicate it effectively to users. This program consists of three novel research lines. First, we aim to establish a “natural” semantic representation for individual texts, which is based solely on crowdsourcable natural language expressions rather than on pre-specified schemata. To that end, we follow and extend the recent Question-Answer Semantic Role Labeling (QA-SRL) approach, through which we decompose sentence information to minimal question-answer pairs, each representing an “atomic” statement. Second, we are developing  principles for consolidating the information structures of different texts, requiring substantial extension of the expressiveness and performance of cross-text co-reference detection. This yields a consolidated structure that bears similarities to traditional knowledge graphs, where representations correspond to real-world elements and statements relating them. Third, we are developing a framework for interactive exploration of the consolidated content, including methodologies for evaluating interactive presentation of information. In the talk I will provide an overview of the framework and its three research lines and illustrate some concrete research tasks.`
           },
           bio: `Ido Dagan holds B.Sc. (Summa Cum Laude) and Ph.D. degrees in Computer Science from the Technion, Israel. He conducted his Ph.D. research in collaboration with the IBM Haifa Scientific Center, where he was a research fellow in 1991. During 1992-1994 he was a Member of Technical Staff at AT&T Bell Laboratories. During 1994-1998 he has been at the Department of Computer Science of Bar Ilan University, to which he returned in 2003. During 1998-2003 he was co-founder and CTO of a text categorization startup company, FocusEngine, and VP of Technology at LingoMotors, a Cambridge Massachusetts company which acquired FocusEngine.`
         },
@@ -157,10 +157,10 @@ export default {
           link: 'http://www.hlt.utdallas.edu/~vince/',
           country: 'USA',
           talk: {
-            title: ``,
-            abstract: ``
+            title: `Towards Content-Based Essay Scoring`,
+            abstract: `State-of-the-art automated essay scoring engines such as E-rater do not grade essay content, focusing instead on providing diagnostic trait feedback on categories such as grammar, usage, mechanics, style and organization. Content-based essay scoring is very challenging: it requires an understanding of essay content and is beyond the reach of today's automated essay scoring technologies. As a result, content-dependent dimensions of essay quality are largely ignored in existing automated essay scoring research. In this talk, we describe our recent and ongoing efforts on content-based essay scoring, sharing the lessons we learned from automatically scoring one of the arguably most important content-dependent dimensions of persuasive essay quality, argument persuasiveness.`
           },
-          bio: ``
+          bio: `Vincent Ng is a Professor in the Computer Science Department at the University of Texas at Dallas. He is also the director of the Machine Learning and Language Processing Laboratory in the Human Language Technology Research Institute at UT Dallas. He obtained his B.S. from Carnegie Mellon University and his Ph.D. from Cornell University. His research is in the area of Natural Language Processing, focusing on the development of machine learning methods for addressing key tasks in information extraction and discourse processing.`
         },
         {
           name: 'Thang Luong',
@@ -176,7 +176,7 @@ export default {
         },
         {
           name: 'Linlin Li',
-          org: 'Alibaba',
+          org: 'Alibaba DAMO Academy',
           photoUrl: '/static/img/speakers/linlin-min.png',
           link: 'https://perso.limsi.fr/linlin/',
           country: 'China',
@@ -191,6 +191,8 @@ export default {
   },
   created () {
     DataUtil.sortAlphabeByName(this.speakers)
+  },
+  mounted () {
   }
 }
 </script>
