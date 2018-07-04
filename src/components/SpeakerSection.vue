@@ -169,10 +169,17 @@ export default {
           link: 'https://nlp.stanford.edu/~lmthang/',
           country: 'USA',
           talk: {
-            title: ``,
-            abstract: ``
+            title: `Google QANet -- state-of-the-art reading comprehension on SQuAD`,
+            abstract: `In this talk, I will describe QANet, Google's reading comprehension system that currently ranks #1 on the Stanford Question Answering Dataset (SQuAD). Specifically, I will discuss the three key ingredients that contribute to our strong performance: model architecture, data augmentation, and transfer learning.`
           },
-          bio: `Thang Luong is a research scientist at Google Brain. He's interested in using deep learning to solve language problems, specifically reading comprehension and dialogue systems at the moment. He obtained his PhD at Stanford University under the guidance of Prof. Christopher Manning. In the past, he worked extensively on neural machine translation (NMT) at both Google and Stanford.`
+          bio: `Thang Luong is currently a research scientist at Google Brain. He’s
+                interested in using deep learning to solve language problems,
+                specifically machine translation, question answering, and dialogue
+                systems. He obtained his PhD from Stanford University, during which he
+                built state-of-the-art neural machine translation (NMT) systems at
+                both Google and Stanford. He has given a tutorial on NMT at ACL’16,
+                served as an area chair for machine translation at ACL’17, and
+                organized NMT’17, the first workshop on neural machine translation.`
         },
         {
           name: 'Linlin Li',
