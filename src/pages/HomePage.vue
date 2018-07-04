@@ -32,8 +32,11 @@
     <section class="pb100">
       <OrganizerNameSection/>
     </section>
-     <section id="partners" class="bg-gray pt100 pb100">
+     <section id="partners" class="bg-gray pt100">
       <PartnerSection/>
+    </section>
+    <section id="participants" class="bg-gray pt100 pb100">
+      <ParticipantSection/>
     </section>
     <!--brands section end-->
     <!--contact section -->
@@ -55,6 +58,7 @@ import SliderSection from '@/components/SliderSection'
 import SpeakerSection from '@/components/SpeakerSection'
 import OrganizerNameSection from '@/components/OrganizerNameSection'
 import ProgrammeSection from '@/components/ProgrammeSection'
+import ParticipantSection from '@/components/ParticipantSection'
 
 export default {
   components: {
@@ -66,7 +70,8 @@ export default {
     CoOrganizerSection,
     SpeakerSection,
     OrganizerNameSection,
-    ProgrammeSection
+    ProgrammeSection,
+    ParticipantSection
   },
   name: 'HomePage',
   data () {

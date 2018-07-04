@@ -8,27 +8,27 @@
     <div id="or-carousel" class="brand_carousel owl-carousel">
       <div class="brand_item text-center">
         <a target="_blank" href="http://www.nus.edu.sg/">
-          <img src="static/img/co-organizers/mini/co-nus-400x300.png" alt="brand">
+          <img src="static/img/co-organizers/co-nus.png" alt="brand">
         </a>
       </div>
       <div class="brand_item text-center">
         <a target="_blank" href="http://www.ntu.edu.sg/">
-          <img src="static/img/co-organizers/mini/co-ntu-400x300.png" alt="brand">
+          <img src="static/img/co-organizers/co-ntu.png" alt="brand">
         </a>
       </div>
       <div class="brand_item text-center">
         <a target="_blank" href="https://www.smu.edu.sg/">
-          <img src="static/img/co-organizers/mini/co-smu-400x300.png" alt="brand">
+          <img src="static/img/co-organizers/co-smu.png" alt="brand">
         </a>
       </div>
       <div class="brand_item text-center">
         <a target="_blank" href="https://sutd.edu.sg/">
-          <img src="static/img/co-organizers/mini/co-sutd-400x300.png" alt="brand">
+          <img src="static/img/co-organizers/co-sutd.png" alt="brand">
         </a>
       </div>
       <div class="brand_item text-center">
         <a target="_blank" href="https://www.a-star.edu.sg/">
-          <img src="static/img/co-organizers/mini/co-astar-400x300.png" alt="brand">
+          <img src="static/img/co-organizers/co-astar.png" alt="brand">
         </a>
       </div>
     </div>

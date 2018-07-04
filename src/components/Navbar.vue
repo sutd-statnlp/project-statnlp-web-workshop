@@ -16,6 +16,9 @@
                   <li class="nav-item">
                       <a class="nav-link " href="#partners">Partners</a>
                   </li>
+                  <!-- <li class="nav-item">
+                      <a class="nav-link " href="#participants">Participants</a>
+                  </li> -->
                   <li class="nav-item">
                       <a class="nav-link " href="#registration">Registration</a>
                   </li>
