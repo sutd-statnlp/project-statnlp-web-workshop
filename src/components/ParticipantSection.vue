@@ -2,7 +2,7 @@
   <div class="container">
     <div class="section_title">
       <h3 class="title">
-        Participants
+        Registered Participants Include
       </h3>
     </div>
     <div id="parti-carousel" class="brand_carousel owl-carousel">
@@ -26,6 +26,22 @@ export default {
         {
           link: 'https://www.dbs.com',
           imgUrl: '/static/img/participants/dbs.png'
+        },
+        {
+          link: 'https://www.agoda.com/',
+          imgUrl: '/static/img/participants/agoda.png'
+        },
+        {
+          link: 'https://www.cxagroup.com/',
+          imgUrl: '/static/img/participants/cxa.png'
+        },
+        {
+          link: 'https://www.panasonic.com/sg/',
+          imgUrl: '/static/img/participants/panasonic.png'
+        },
+        {
+          link: 'https://www.riotinto.com/',
+          imgUrl: '/static/img/participants/rio.png'
         }
       ]
     }

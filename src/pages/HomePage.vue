@@ -32,11 +32,8 @@
     <section class="pb100">
       <OrganizerNameSection/>
     </section>
-     <section id="partners" class="bg-gray pt100">
+     <section id="partners" class="bg-gray pt100 pb100">
       <PartnerSection/>
-    </section>
-    <section id="participants" class="bg-gray pt100 pb100">
-      <ParticipantSection/>
     </section>
     <!--brands section end-->
     <!--contact section -->
@@ -44,6 +41,9 @@
       <RegistrationSection/>
     </section>
     <!--contact section end -->
+    <section id="participants" class="bg-gray pt100 pb100">
+      <ParticipantSection/>
+    </section>
   </div>
 </template>
 
