@@ -95,10 +95,10 @@ export default {
           link: 'https://www.lazada.sg/',
           imgUrl: '/static/img/participants/lazada.png'
         },
-        {
-          link: 'https://www.mindef.gov.sg/',
-          imgUrl: '/static/img/participants/mindef.png'
-        },
+        // {
+        //   link: 'https://www.mindef.gov.sg/',
+        //   imgUrl: '/static/img/participants/mindef.png'
+        // },
         {
           link: 'https://www.moe.gov.sg/',
           imgUrl: '/static/img/participants/moe.png'
