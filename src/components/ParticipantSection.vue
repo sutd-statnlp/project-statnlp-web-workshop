@@ -95,10 +95,10 @@ export default {
           link: 'https://www.lazada.sg/',
           imgUrl: '/static/img/participants/lazada.png'
         },
-        // {
-        //   link: 'https://www.mindef.gov.sg/',
-        //   imgUrl: '/static/img/participants/mindef.png'
-        // },
+        {
+          link: 'https://www.mindef.gov.sg/',
+          imgUrl: '/static/img/participants/mindef.png'
+        },
         {
           link: 'https://www.moe.gov.sg/',
           imgUrl: '/static/img/participants/moe.png'
@@ -146,6 +146,98 @@ export default {
         {
           link: 'http://www.tsukuba.ac.jp/',
           imgUrl: '/static/img/participants/uot.png'
+        },
+        {
+          link: 'https://www.jpmorgan.com/',
+          imgUrl: '/static/img/participants/jpm.png'
+        },
+        {
+          link: 'https://home.kpmg.com/',
+          imgUrl: '/static/img/participants/kpmg.png'
+        },
+        {
+          link: 'https://www.gic.com.sg/',
+          imgUrl: '/static/img/participants/gic.png'
+        },
+        {
+          link: 'https://www.imda.gov.sg/',
+          imgUrl: '/static/img/participants/imda.png'
+        },
+        {
+          link: 'https://www.thomsonreuters.com/',
+          imgUrl: '/static/img/participants/thomson.png'
+        },
+        {
+          link: 'https://generalassemb.ly/',
+          imgUrl: '/static/img/participants/genass.png'
+        },
+        {
+          link: 'https://www.ucl.ac.uk/',
+          imgUrl: '/static/img/participants/ucl.png'
+        },
+        {
+          link: 'http://www.univ-paris8.fr/',
+          imgUrl: '/static/img/participants/univ8.png'
+        },
+        {
+          link: 'http://www.wsg.gov.sg/',
+          imgUrl: '/static/img/participants/wsg.png'
+        },
+        {
+          link: 'https://www.wecashgroup.com/',
+          imgUrl: '/static/img/participants/wecash.png'
+        },
+        {
+          link: 'https://www.vodafone.com/',
+          imgUrl: '/static/img/participants/voda.png'
+        },
+        {
+          link: 'https://www.ura.gov.sg/',
+          imgUrl: '/static/img/participants/ura.png'
+        },
+        {
+          link: 'https://www.solvay.com/',
+          imgUrl: '/static/img/participants/solvay.png'
+        },
+        {
+          link: 'https://surbanajurong.com/',
+          imgUrl: '/static/img/participants/surjur.png'
+        },
+        {
+          link: 'http://www.tp.edu.sg/',
+          imgUrl: '/static/img/participants/temapoly.png'
+        },
+        {
+          link: 'http://www.suss.edu.sg/',
+          imgUrl: '/static/img/participants/suss.png'
+        },
+        {
+          link: 'https://brand.arizona.edu/',
+          imgUrl: '/static/img/participants/arizona.png'
+        },
+        {
+          link: 'http://en.uestc.edu.cn/',
+          imgUrl: '/static/img/participants/uest.png'
+        },
+        {
+          link: 'https://www.pwc.com/',
+          imgUrl: '/static/img/participants/pwc.png'
+        },
+        {
+          link: 'http://www.schroders.com/',
+          imgUrl: '/static/img/participants/schroder.png'
+        },
+        {
+          link: 'https://mila.quebec/en/',
+          imgUrl: '/static/img/participants/mila.png'
+        },
+        {
+          link: 'https://www.edb.gov.sg/',
+          imgUrl: '/static/img/participants/edb.png'
+        },
+        {
+          link: 'https://www.ubs.com/',
+          imgUrl: '/static/img/participants/ubs.png'
         }
       ]
     }
