@@ -17,7 +17,7 @@ export default {
     }
   },
   mounted () {
-    $('.countdown').countdown('2018/07/13', function (event) {
+    $('.countdown').countdown('2018/07/13 09:00:00', function (event) {
       $(this).html(event.strftime('<div>%-w <span>Weeks</span></div>  <div>%-d <span>Days</span></div>  <div>%-H<span>Hours</span></div> <div>%-M<span>Minutes</span></div> <div>%-S<span>Seconds</span></div>'))
     })
   }

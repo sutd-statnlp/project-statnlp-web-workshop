@@ -27,7 +27,7 @@
                     </div>
                    <div class="price_header">
                        <a target="_blank" href="https://istd.sutd.edu.sg/people/faculty/lu-wei">
-                         <h5>Wei Lu</h5>
+                         <h5>Wei Lu, SUTD</h5>
                        </a>
                    </div>
                 </div>
@@ -79,10 +79,10 @@ export default {
           name: 'Francis Bond',
           org: 'Nanyang Technological University'
         },
-        {
-          name: 'Wei Lu',
-          org: 'Singapore University of Technology and Design'
-        },
+        // {
+        //   name: 'Wei Lu',
+        //   org: 'Singapore University of Technology and Design'
+        // },
         {
           name: 'Nancy Chen',
           org: 'Institute for Infocomm Research'
@@ -114,6 +114,10 @@ export default {
         {
           name: 'Yue Zhang',
           org: 'Singapore University of Technology and Design'
+        },
+        {
+          name: 'Lang Jun',
+          org: 'Lazada Group'
         }
       ]
     }
