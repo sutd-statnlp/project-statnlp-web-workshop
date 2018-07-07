@@ -116,7 +116,7 @@ export default {
           org: 'Singapore University of Technology and Design'
         },
         {
-          name: 'Lang Jun',
+          name: 'Bill Jun Lang',
           org: 'Lazada Group'
         }
       ]
