@@ -238,6 +238,62 @@ export default {
         {
           link: 'https://www.ubs.com/',
           imgUrl: '/static/img/participants/ubs.png'
+        },
+        {
+          link: 'https://www.barclays.co.uk/',
+          imgUrl: '/static/img/participants/barclays.png'
+        },
+        {
+          link: 'http://dentsuaegisnetwork.com/',
+          imgUrl: '/static/img/participants/denet.png'
+        },
+        {
+          link: 'https://www.nju.edu.cn/',
+          imgUrl: '/static/img/participants/nju.png'
+        },
+        {
+          link: 'https://www.hpe.com/',
+          imgUrl: '/static/img/participants/hpe.png'
+        },
+        {
+          link: 'http://www.h2i.sg/',
+          imgUrl: '/static/img/participants/h2i.png'
+        },
+        {
+          link: 'https://www.joinef.com/',
+          imgUrl: '/static/img/participants/joinef.png'
+        },
+        {
+          link: 'http://www.publicisgroupe.com/',
+          imgUrl: '/static/img/participants/publicgroup.png'
+        },
+        {
+          link: 'http://www.jll.com.sg/',
+          imgUrl: '/static/img/participants/jll.png'
+        },
+        {
+          link: 'https://www.biofourmis.com/',
+          imgUrl: '/static/img/participants/biofourmis.png'
+        },
+        {
+          link: 'https://www.duke-nus.edu.sg/',
+          imgUrl: '/static/img/participants/dukenus.png'
+        },
+        {
+          link: 'https://www.groupm.com/',
+          imgUrl: '/static/img/participants/groupm.png'
+        },
+        {
+          link: 'https://www.expedia.com/',
+          imgUrl: '/static/img/participants/expedia.png'
+        },
+        {
+          link: 'https://www.northerntrust.com/',
+          imgUrl: '/static/img/participants/northerntrust.png'
+        },
+        {
+          link: 'https://www.csc.gov.sg/',
+          imgUrl: '/static/img/participants/csc.png'
         }
       ]
     }
