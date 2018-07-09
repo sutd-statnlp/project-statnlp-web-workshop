@@ -47,71 +47,16 @@
         </div>
       </div>
       <div class="col-md-8 col-12">
-        <form @submit.prevent="saveUser" v-if="!isRegisterd">
         <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="contact_form">
-              <div class="form-group">
-                <input type="text" class="form-control" name="name" placeholder="Name" v-model="user.name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email" v-model="user.email" required>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-12">
-            <div class="contact_form">
-              <div class="form-group">
-                <input type="text" class="form-control" name="affiliation" placeholder="Affiliation"  v-model="user.affiliation" required>
-              </div>
-              <div class="form-group">
-                <select class="form-control" name="role" id="role" v-model="user.role" v-if="!isCustomRole" required>
-                  <option value="" selected="selected" disabled="">Attend as </option>
-                  <option>Faculty</option>
-                  <option>Researcher</option>
-                  <option>Industry</option>
-                  <option>Government</option>
-                  <option>UG Student</option>
-                  <option>PG Student</option>
-                  <option value="other">Others</option>
-                </select>
-              </div>
-               <div class="form-group" id="formCustomRole" v-if="isCustomRole">
-                  <input type="text" class="form-control" placeholder="Attend as " id="customRole" name="customRole"  v-model="user.customRole" :required="isCustomRole">
-                </div>
-            </div>
-          </div>
-
-        </div>
-        <div id="location" class="row">
-          <div class="col-12">
-              <div class="form-group text-center">
-                <label>
-                  Would you agree to share your registration information with industry partners ?
-                  <select name="agree" id="agree" v-model="user.agree" required="">
-                    <option disabled="" selected="" value="">
-                    </option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                  </select>
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group text-center m-btns">
-                <button type="submit" class="btn btn-rounded btn-primary">Register</button>
-                <button type="button" class="btn btn-rounded btn-primary ml-2" @click="reset">Reset</button>
-              </div>
-            </div>
-        </div>
-        </form>
-        <div class="row" v-if="isRegisterd">
           <div class="col-12 text-center">
-            <h4 class="text-success">
-              Registration is successful !
+            <h4 class="text-warning">
+              Registration is now closed.
             </h4>
             <h5>
-               We look forward to seeing you.
+              If you have any questions, please send an email message to <br>
+              <a href="mailto:ssnlp-organizers@googlegroups.com">
+                <strong>ssnlp-organizers@googlegroups.com</strong>
+              </a>
             </h5>
             <h5>
               Thank you !
