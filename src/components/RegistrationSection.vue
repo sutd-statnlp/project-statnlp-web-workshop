@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" id="location">
       <div class="col-md-4 col-12">
         <div class="contact_info">
           <h4>
@@ -76,42 +76,15 @@
 </template>
 
 <script>
-import DatabaseService from '@/services/DatabaseService'
 export default {
   name: 'RegistrationSection',
   data () {
     return {
-      user: {
-        name: null,
-        email: null,
-        affiliation: null,
-        role: '',
-        customRole: null,
-        agree: null
-      },
-      isRegisterd: false
     }
   },
   computed: {
-    isCustomRole () {
-      return this.user.role === 'other'
-    }
   },
   methods: {
-    reset () {
-      this.user = {
-        name: null,
-        email: null,
-        affiliation: null,
-        role: '',
-        customRole: null,
-        agree: null
-      }
-    },
-    saveUser () {
-      DatabaseService.saveUser(this.user)
-      this.isRegisterd = true
-    }
   }
 }
 </script>

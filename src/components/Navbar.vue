@@ -20,10 +20,10 @@
                       <a class="nav-link " href="#registration">Registration</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link " href="#participants">Participants</a>
+                      <a class="nav-link " href="#location">Location</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link " href="#location">Location</a>
+                      <a class="nav-link " href="#participants">Participants</a>
                   </li>
               </ul>
           </div>
